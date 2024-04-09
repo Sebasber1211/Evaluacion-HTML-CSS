@@ -1,0 +1,416 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+
+h1 {
+  padding: 40px;
+	font-size: 1.8rem;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 500;
+	padding-bottom: 40px; 
+}
+
+h4{
+
+	text-align: center;
+	text-transform: uppercase;
+
+}
+
+
+
+#navbar {
+	overflow: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+.container {
+	margin: auto;
+	max-width: 1300px;
+	overflow: auto;
+	padding: 0 20px;
+}
+.container a {
+	margin-top: 30px;
+	max-width: 1300px;
+	overflow: auto;
+	padding: 0 20px;
+  
+}
+.encabezado{
+    text-align: center;
+    max-width: 100%;
+    height: 600px;
+    width: 100%;
+    background-image: url(/img/robot.jpg);
+    background-size: cover;
+}
+
+.navegacion-barra {
+  background-image: url(/img/imagen\ 04.jpg);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+
+}
+
+.logo  {
+  background-image: url(/img/Documento\ \(1\).png);
+  background: no-repeat;
+  margin-right: 970px;
+  width: 20vh;
+  border: 1px solid #ccc;
+  padding: 20px;
+   
+}
+
+.titulo-principal {
+  padding-top: 20px;
+  color: rgb(0, 0, 0);
+	padding-top: 10px;
+	padding-bottom: 250px;
+  height: .25px ;
+    
+}
+
+
+/* Cursos */
+.contenedor-curso {
+  background-image: url(/img/Cursos.jpg);
+  background-size: cover;
+  height: 800px;
+  width: 100%;
+  padding: 100px;
+}
+
+.titulo-curso{
+  color: #ffffff;
+}
+
+.up-categories {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin-bottom: 3rem;
+}
+
+.contenedor-categorias {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 3rem;
+}
+
+.categoria-carta {
+	height: 300px;
+	display: flex;
+  margin-top: 60px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 2rem;
+	gap: 2rem;
+}
+
+.categoria-flutter a {
+  color: #5ad0ff;
+    
+}
+.categoria-flutter {
+	background-image: url(/img/curso\ 01.jpg.png);
+	background-size: cover;
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+
+.categoria-android a {
+  color: #15ff00;
+}
+.categoria-android {
+
+	background-image:url(/img/curso\ 02.jpg.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.categoria-ionic a {
+  color: #000000;
+}
+.categoria-ionic {
+	background-image:url(/img/curso\ 03.jpg.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.categoria-carta p {
+	font-size: 2rem;
+	color: #000000;
+	text-transform: capitalize;
+	position: relative;
+}
+
+.categoria-carta p::after {
+	content: '';
+	width: 2.5rem;
+	height: 2px;
+	background-color: #47a5ca;
+	position: absolute;
+	bottom: -1rem;
+	left: 50%;
+	transform: translate(-50%, 50%);
+}
+
+.categoria-carta span {
+	font-size: 1.6rem;
+	color: #fff;
+	cursor: pointer;
+}
+.categoria-carta span:hover {
+	color: #da1e1e;
+}
+
+/* Profesores */
+
+.titulo-profesor {
+  right: 40px;
+  color: white;
+  margin: 0px;
+  padding: 20px;
+}
+
+
+.contenedor-imagenes{
+  background-image: url(/img/fondo-profes.jpg);
+ background-size: cover;
+}
+
+
+.contenedor-imagenes {
+
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* Todas las imágenes tendrán la misma altura */
+  gap: 40px; /* Espacio entre imágenes */
+  padding: 60px; /* Espacio alrededor del contenedor */
+  height: 90vh; /* Altura del viewport */
+}
+
+.imagen {
+  position: relative;
+  flex: 0 0 auto; /* Para que no se estiren */
+  max-width: 300px; /* Ancho máximo de cada imagen */
+  width: 100%; /* Para que se ajusten al ancho del contenedor */
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+.imagen img {
+  width: 100%;
+  height: 400px;
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.3s; 
+}
+
+.imagen:hover img {
+  transform: scale(1.1); 
+}
+
+.titulo-p {
+  color: white;
+}
+.texto {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  font-size: 14px;
+}
+
+
+
+/* Videos */
+
+.course-title {
+  padding: 40px;
+  text-align: center;
+  
+}
+.contenedor-videos {
+  display: flex;
+  justify-content: center; 
+  gap: 40px; 
+
+}
+
+
+.video iframe {
+  width: 400px; 
+  height: 300px; 
+}
+
+
+/* Carrusel */
+.carrusel {
+  position: relative;
+  max-width: 100%;
+  padding: 40px;
+}
+
+.slides {
+  display: flex;
+  width: 100%;
+    overflow: hidden;
+    height: 30%;
+}
+
+.slide {
+  flex: 0 0 100%; /* Ocupa todo el ancho */
+  display: none; /* Ocultar todos los slides por defecto */
+}
+
+.navegacion {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+
+}
+
+label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #333;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+
+input[type="radio"] {
+  display: none;
+}
+
+/* Mostrar el slide correspondiente al radio button seleccionado */
+#slide1:checked ~ .slides #s1,
+#slide2:checked ~ .slides #s2,
+#slide3:checked ~ .slides #s3,
+#slide4:checked ~ .slides #s4,
+#slide5:checked ~ .slides #s5,
+#slide6:checked ~ .slides #s6,
+#slide7:checked ~ .slides #s7,
+#slide8:checked ~ .slides #s8{
+  display: block;
+}
+
+.slide img {
+  
+  max-width: 66%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Centrar horizontalmente */
+}
+
+
+
+
+/* Flecha Izquierda */
+.carousel::before,
+.carousel::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.carousel::before {
+  left: 10px;
+}
+
+.carousel::after {
+  right: 10px;
+}
+
+.carousel::before:hover,
+.carousel::after:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Iconos para las flechas */
+.carousel::before {
+  content: '❮'; /* Unicode para flecha izquierda */
+}
+
+.carousel::after {
+  content: '❯'; /* Unicode para flecha derecha */
+}
+/* Footer */
+footer {
+  background-color: #000000;
+  color: white;
+  padding: 40px 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-contenedor {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+
+.footer-seccion {
+  display: flex;
+  flex-direction: column;
+  position: relative; /* Agrega posición relativa */
+  padding: 10px;
+}
+
+.footer-seccion::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 10px; /* Ajusta el espacio entre la línea y el borde derecho */
+  width: 1px;
+  background-color: white;
+  margin-right: -10px;
+}
+
+.footer-seccion h3 {
+  margin-bottom: 15px;
+}
+
+.footer-seccion ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-seccion ul li {
+  margin-bottom: 5px;
+}
+
+.footer-seccion ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-seccion ul li a:hover {
+  color: #aaa;
+}
